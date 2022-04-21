@@ -1,0 +1,26 @@
+html {
+  @apply bg-gray-1000;
+}
+
+body {
+  @apply font-sans text-base leading-normal text-gray-100 antialiased bg-gray-1000;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+
+  .vue-grid-item.vue-grid-placeholder {
+    @apply rounded bg-primary-500;
+    opacity: 0.35;
+  }
+
+  .vue-grid-item {
+    touch-action: none;
+  }
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.min-h-screen-excluding-header {
+  min-height: calc(100vh - 56px);
+}
